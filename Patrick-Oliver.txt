@@ -1,0 +1,245 @@
+
+Link to codepen assignment: https://codepen.io/Patrick-G-Oliver/pen/LYVGoZE?editors=1100
+
+Copy the questions below into the firt-lastname.txt file on your github repo - answer each question and then push your changes. 
+
+    1. What is Semantic HTML? 
+
+	Semantic HTML is markup that provides meaning to its content's organization, 
+	making it easier for humans and machines to understand (which improves SEO and 
+	accessibility for screen readers, etc.).
+	
+    2. What is HTML used for? 
+
+	HTML is used to wrap and organize elements (content) giving them (it) structure
+	and meaning in the context of a document.
+
+    3. What is an attribute and where do we put it? 
+
+	An attribute is piece of additional information added to an HTML element (such as 
+	"height" or "width" on an <img> element. It is placed after the name of the
+	opening tag of an element (or simply after the name of a self-closing tag). 
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+
+	The h1 tag is used to designate the main heading of a page and is best used only 	once.
+
+    5. Name two tags that have required attributes
+
+	1) An a "anchor" tag must have an href attribute. 
+	2) An img "image" tag must have an src attribute. 
+	(Although I would imagine that exceptions do exist?)
+
+    6. What do we put in the head of our HTML document? 
+
+	The head of an HTML document typically contains a links to css stylesheets, one or
+	more meta elements and a title element. 
+
+    7. What is an id? 
+
+	An id is an attribute that can be added to an HTML element to in turn be accessed
+	by a CSS id selector. Ids should be used sparingly due to their selector's high 
+	specificity weight.
+
+    8. What elements can I add an id to? 
+
+	An id attribute can be added to any HTML element (source: w3schools.com)
+
+    9. How many times can I use the same id on a page? 
+
+	A given id can only be used once per page.
+
+    10. What is a class? 
+
+	A class is an attribute that can be added to HTML elements to in turn be accessed
+	by CSS class selectors. It's usefulness lies in the fact that it can be used 
+	multiple times in a given document / stylesheet.
+
+    11. What elements can I add a class to? 
+
+	A class attribute can be added to any HTML element. 
+
+    12. How many times can I use the same class on a page? 
+
+	The same class can be used as many times as necessary.
+
+    13. How do I get my link to open in a new tab?
+
+	A link can be directed to open in a new tab by adding the target="_blank"
+	attribute to the a "anchor" element containing the link.
+
+    14. What is the alt attribute used for? 
+
+	The alt attribute is added to image elements to provide information regarding an 
+	image in case it doesn't render properly on the page, or a screen reader is in 
+	use (for a visually impaired user, for example).
+
+    15. How do I reference an id?
+
+	An id attribute can be referenced by a CSS id selector, which accesses the HTML 
+	element with the id and styles it accordingly as follows:
+
+	#id1 {
+	   border: solid red 5px;
+	)
+
+    16. What is the difference between a section and a div?
+
+	A section element is considered more semantic (that is, it provides more meaning
+	within the context of an HTML document) than a div element (which is considered to
+	be more of a generic container element). 
+
+    17. What is CSS used for? 
+
+	CSS is used to style the content (markup) found in HTML documents. 
+
+    18. How do we select an element? Example - every h2 on the page
+
+	A CSS ruleset is used to select an element. Rulesets contain a selector and a 
+	declaration: which in turn consists of a property and its corresponding value 
+	as in the following example:
+
+	h2 {
+	  color: green;
+	}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+	Perhaps the main difference between a class and an id is the number of times each
+	may be used (in addition to the fact that an id has greater specificity). A class
+	may be used as many times as needed, while an id may only be used once per page.
+	For example, a class might be used to style all the paragraphs on a page to give 
+	them all identical font size, while an id might be used to style a single heading
+	tag (amongst many) to make it stand out from the rest.	
+
+    20. How do we select classes in CSS?
+
+	A class selector, consisting of a dot preceding the class name in question, is 
+	used to select classes in CSS, as in the following example:
+
+	.class1 {
+	   font-size: 20px;
+	}
+
+    21. How do we select a p element with a single class of “human”?
+
+	p.human {
+	   background: blue;
+	}
+	   
+
+    22. What is a parent child selector? When would this be useful? 
+
+	A parent child selector only selects elements of a certain type that are direct 
+	children of a parent element (and not grandchildren, great-grandchildren, and so
+	on...). For example:
+
+	section > h2 {
+	   color: blue;
+	}
+
+	This would be useful in cases where there are multiple layers of elements nested 
+	within each other in a similar pattern and one only wants to style the first 
+	"layer" or "generation" of a given element type. 	
+
+    23. How do you select all links within a div with the class of sidebar?
+
+	div.sidebar a {
+	   color: orange;
+	}
+	   
+
+    24. What is a pseudo selector?
+
+	A pseudo selector focuses on the state of an element rather than its mere presence  	as a conventional selector would. A good example is the :hover suffix added to a 
+	selector to cause the styling to be applied when the user hovers (their cursor,
+	finger, etc.) over the element in question. For example:
+
+	p:hover {
+	   color: yellow;
+	}
+
+    25. What do we use the change the spacing between lines?
+
+	The line-height property is used to change the (vertical) spacing between lines as
+	in the following example:
+
+	p {
+	 line-height: 1.5;
+	}
+
+    26. What do we use to change the spacing between letters?
+
+	The letter-spacing property is used to change the spacing between letters as in 
+	the following example:
+
+	p {
+	 letter-spacing: 1.5px;
+	}
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+	The text-transform property is used to modify text as follows:
+
+	p {
+	 text-transform: uppercase;
+	}
+
+    28. How do I add a 1px border around my div that is dotted and black?
+
+	div {
+	   border: dotted black 1px;
+	}
+
+    29. How do I select everything on the page? 
+	
+	To select everything on the page, the universal selector is used as follows:
+
+	* {
+	  font-size: 15;
+	}
+
+    30. How do I write a comment in CSS?
+
+	Content is "commented out" in CSS by wrapping code in the following: 
+
+	/* <content to be commented out> */
+
+    31. How do I find out what file I am in, when I am using the command line? 
+
+	The pwd (print working directory) command notifies the user of what file they are  	in.
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+
+	The ls command will list the files/folders in the current folder.
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+
+	The rm <name of file> command removes files. One reason to be careful with this 
+	command is the fact that the deleted content is completely deleted and not sent to 	a retrievable trash folder.
+
+    34. Why should I use version control? 
+
+	Version control allows for secure copies of code to be kept while other copies are
+	modified risk-free. It also allows for collaboration between and among 
+	programmers. 
+
+    35. How often should I commit to github?
+
+	It is best to commit to GitHub frequently, as in at least hourly, but preferably
+	every 15 minutes or so. One should also commit prior to extended breaks and, of 
+	course, at the end of work sessions.
+
+    36. What is the command we would use to push our repo up to github? 
+
+	git push -u origin 'repo-name'
+
+    37. Walk me through Lambda's git flow. 
+
+	1) A repo on GitHub is forked in order to create a student's copy.
+	2) The student invites their TL's to be collaborators on the forked repo (for 
+	   review/grading purposes).
+	3) The repo is cloned placing it 'locally' on the student's computer.
+	4) A branch of the repo is made on which to complete assignments.
+	5) The branch is pushed back to GitHub where a pull request is made and the branch 	   is compared to the master (student's fork). 
+	6) The branch is merged back into the fork by a TL. 
